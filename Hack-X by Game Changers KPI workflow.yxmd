@@ -1,0 +1,3889 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="243">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="18" width="612" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Intelligent Plant Productivity System</Text>
+          <Font name="Arial" size="21.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="219" b="10" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="244">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="78" width="612" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>By the Game Changers - Shalini Polimetla &amp; Megan Dibble</Text>
+          <Font name="Arial" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="241">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1253" y="497" width="219" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Intelligent Alerts !</Caption>
+          <Style TextColor="#314c4a" FillColor="#fde8a8" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="240">
+          <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+            <Position x="1362" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SMTPServerName>internalrelay.americas.swk.pri</SMTPServerName>
+              <ToIsField value="False" />
+              <To />
+              <CcIsField value="False" />
+              <Cc />
+              <BccIsField value="False" />
+              <Bcc />
+              <FromIsField value="False" />
+              <From />
+              <SubjectIsField value="False" />
+              <Subject />
+              <BodyIsField value="True" />
+              <Body>LocationId</Body>
+              <UserName />
+              <Password />
+              <Enabled>False</Enabled>
+              <Port>25</Port>
+              <Encryption>None</Encryption>
+              <SMTPAuth value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Email - Action Required</AnnotationText>
+              <DefaultAnnotationText>Email - Action Required</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+        </Node>
+        <Node ToolID="242">
+          <GuiSettings Plugin="Modeling">
+            <Position x="1278" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AssistedModelingDbFilepath />
+              <DatabaseMigrationFailure>false</DatabaseMigrationFailure>
+              <MemoryThresholdExceeded>false</MemoryThresholdExceeded>
+              <DesignerVersion />
+              <RawDataDbFilepath />
+              <TargetVariable />
+              <LastNumRowsReceived />
+              <RadioSelection>assisted</RadioSelection>
+              <SerializedData />
+              <PythonPath />
+              <PythonArgs />
+              <Port />
+              <schemaID>Tools.Modeling.2</schemaID>
+              <AssistedModelingMetadata />
+              <InputMetadataChanged>false</InputMetadataChanged>
+              <sessionId>b1e70-6323-251e-35e1-0da36a32501d</sessionId>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="Modeling\main.py" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="234">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="1507" width="997" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Operations</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="164">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="584" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="FileName" order="Ascending" />
+                <Field field="Year" order="Ascending" />
+                <Field field="MonthNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>FileName - Ascending
+Year - Ascending
+MonthNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="166">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="296" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([FileName], &quot;_KPI&quot;, &quot;&quot;)" field="FileName" size="18" type="String" />
+                <FormulaField expression="[FileName]+&quot;_Employee Ideas&quot;" field="Title_Employee Ideas" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>FileName = Replace([FileName], "_KPI", "")
+Title_Employee Ideas = [FileName]+"_E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="167">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="776" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="168">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="680" y="1628" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="Title_Employee Ideas" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="169">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="776" y="1628" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FileName" />
+                <Field field="Title_Employee Ideas" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="170">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="872" y="1568" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_Employee Ideas" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_Employee Ideas" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_Employee Ideas" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_Employee Ideas" selected="False" rename="Right_Title_Employee Ideas" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="171">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="968" y="1568" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_80b25ced05764fc6a84f01ff6ff42c23_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="182">
+          <GuiSettings>
+            <Position x="488" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Site Code","Location Id","BusinessUnit","SubBusiness","Sector","Region","Country","State","City","HFMID","Year","Month","#_Total_Employee_Ideas_submitted","#_Total_Employee_Ideas_implemented","Total_#_Value streams","Number_VS_Cpt_12steps","MonYear","X-Axis","FileName","R12OrderID","Employee Idea Implementation Rate (%)","Value Streams Mapped (%)","Title_Employee Ideas","Title_Value Streams Mapped"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="183">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="392" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="191">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="200" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[MonthNum] &lt; DateTimeMonth(DateTimeNow())</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[MonthNum] &lt; DateTimeMonth(DateTimeNow())</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="220">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="680" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>Employee Idea Implementation Rate</name>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Employee Idea Implementation Rate (%)</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                      <color>rgb(200, 150, 0)</color>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Milwaukie_OR_IND_MFG_Employee Ideas</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>X-Axis</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>35.084210526315786</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Employee Idea Implementation Rate (%)</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_Employee Ideas</ColumnsToBatchBy>
+                  <TemplateString>@[Title_Employee Ideas](Title_Employee Ideas)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="231">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="80" y="1556" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Location Id" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="#_Total_Employee_Ideas_submitted" />
+                <Field name="#_Total_Employee_Ideas_implemented" />
+                <Field name="X-Axis" />
+                <Field name="FileName" />
+                <Field name="Employee Idea Implementation Rate (%)" />
+                <Field name="MonthNum" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jan</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>Jan-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>33.33</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Feb</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>Feb-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Mar</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>Mar-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>33.33</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Apr</c>
+                  <c>14</c>
+                  <c>3</c>
+                  <c>Apr-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>21.43</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>May</c>
+                  <c>15</c>
+                  <c>2</c>
+                  <c>May-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>13.33</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jun</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>Jun-21</c>
+                  <c>MMM_WA_IND_MFG_KPI</c>
+                  <c>0</c>
+                  <c>6</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="233">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="786" width="1009" height="434" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>People</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="584" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Year" order="Ascending" />
+                <Field field="MonthNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Year - Ascending
+MonthNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="500" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="LocationId" selected="True" />
+                <SelectField field="BusinessUnit" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="MonthNum" selected="True" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="X-Axis" selected="True" />
+                <SelectField field="Title_HR Planned Absenteeism" selected="True" />
+                <SelectField field="Title_HR_Unplanned Absenteeism" selected="True" rename="Title_HR_Attrition" />
+                <SelectField field="Attrition Rate (%)" selected="True" />
+                <SelectField field="Voluntary Attrition Rate (%)" selected="True" />
+                <SelectField field="Planned_Absenteeism (%)" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="Unplanned_Absenteeism (%)" selected="True" type="FixedDecimal" size="19.2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="788" y="835" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="103">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="692" y="931" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_HR Planned Absenteeism" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="788" y="932" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Title_HR Planned Absenteeism" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="884" y="847" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_HR Planned Absenteeism" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_HR Planned Absenteeism" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_HR Planned Absenteeism" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_HR Planned Absenteeism" selected="False" rename="Right_Title_HR Planned Absenteeism" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="980" y="847" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_b2c22fe750474da9b59c6e607426f104_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="144">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="788" y="1040" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="145">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="692" y="1136" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_HR_Attrition" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="146">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="788" y="1136" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Title_HR_Attrition" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="147">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="884" y="1052" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_HR_Attrition" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_HR_Attrition" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_HR_Attrition" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_HR_Attrition" selected="False" rename="Right_Title_HR_Attrition" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="148">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="980" y="1051" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_c171ceca6cc24705b918324b4b0d5223_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="150">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="392" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([Title_HR Planned Absenteeism], &quot;Planned Absenteeism&quot;, &quot;Absenteeism&quot;)" field="Title_HR Planned Absenteeism" size="40" type="String" />
+                <FormulaField expression="Replace([Title_HR_Unplanned Absenteeism], &quot;Unplanned Absenteeism&quot;, &quot;Attrition&quot;)" field="Title_HR_Unplanned Absenteeism" size="42" type="String" />
+                <FormulaField expression="Round([Planned_Absenteeism (%)], 0.01)" field="Planned_Absenteeism (%)" size="8" type="Double" />
+                <FormulaField expression="Round([Unplanned_Absenteeism (%)], 0.01)" field="Unplanned_Absenteeism (%)" size="8" type="Double" />
+                <FormulaField expression="Round([Attrition Rate (%)], 0.01)" field="Attrition Rate (%)" size="8" type="Double" />
+                <FormulaField expression="Round([Voluntary Attrition Rate (%)], 0.01)" field="Voluntary Attrition Rate (%)" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Title_HR Planned Absenteeism = Replace([Title_HR Planned Absenteeism], "Planned ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="152">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="296" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="180">
+          <GuiSettings>
+            <Position x="199" y="847" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Site Code","LocationId","Region","Country","City","State","HFMID","FileName","Year","Month","BusinessUnit","Sector","FacilityAddress","Zip","Service","SubBusiness","IndustryDesc","Attrition Rate (%)","Voluntary Attrition Rate (%)","Planned_Absenteeism (%)","Unplanned_Absenteeism (%)","MonthNum","R12OrderID","MonYear","Title_HR Planned Absenteeism","X-Axis","Title_HR_Unplanned Absenteeism"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="218">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="668" y="835" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Planned_Absenteeism (%)</ysrc>
+                  <name>Planned Absenteeism (%)</name>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                      <color>rgb(200, 150, 0)</color>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>bar</type>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Unplanned_Absenteeism (%)</ysrc>
+                  <name>Unplanned Absenteeism (%)</name>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                      <color>rgb(255, 200, 105)</color>
+                    </line>
+                    <color>rgb(255, 202, 105)</color>
+                  </marker>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Milwaukie_OR_IND_MFG_Absenteeism</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>X-Axis</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>15.578947368421053</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Planned_Absenteeism (%)</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_HR Planned Absenteeism</ColumnsToBatchBy>
+                  <TemplateString>@[Title_HR Planned Absenteeism](Title_HR Planned Absenteeism)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="219">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="668" y="1040" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>Attrition Rate (%)</name>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Attrition Rate (%)</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                      <color>rgb(200, 150, 0)</color>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>bar</type>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Voluntary Attrition Rate (%)</ysrc>
+                  <name>Voluntary Attrition Rate (%)</name>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                      <color>rgb(255, 202, 105)</color>
+                    </line>
+                    <color>rgb(255, 202, 105)</color>
+                  </marker>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>MMM_WA_IND_MFG_UnPlanned Absenteeism</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <type>category</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>2.2842105263157895</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_HR_Attrition</ColumnsToBatchBy>
+                  <TemplateString>@[Title_HR_Attrition](Title_HR_Attrition)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="229">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="LocationId" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="MonthNum" />
+                <Field name="BusinessUnit" />
+                <Field name="Attrition Rate (%)" />
+                <Field name="Voluntary Attrition Rate (%)" />
+                <Field name="Planned_Absenteeism (%)" />
+                <Field name="Unplanned_Absenteeism (%)" />
+                <Field name="Title_HR Planned Absenteeism" />
+                <Field name="X-Axis" />
+                <Field name="Title_HR_Unplanned Absenteeism" />
+                <Field name="FileName" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Apr</c>
+                  <c>4</c>
+                  <c>IND</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>3.47</c>
+                  <c>3.57</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>Apr-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Feb</c>
+                  <c>2</c>
+                  <c>IND</c>
+                  <c>1.11</c>
+                  <c>1.11</c>
+                  <c>14.8</c>
+                  <c>6.94</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>Feb-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jan</c>
+                  <c>1</c>
+                  <c>IND</c>
+                  <c>2.17</c>
+                  <c>1.09</c>
+                  <c>13.22</c>
+                  <c>1.3</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>Jan-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jun</c>
+                  <c>6</c>
+                  <c>IND</c>
+                  <c>2.08</c>
+                  <c>1.04</c>
+                  <c>3.9</c>
+                  <c>3.01</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>Jun-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Mar</c>
+                  <c>3</c>
+                  <c>IND</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>2.69</c>
+                  <c>3.65</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>Mar-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>May</c>
+                  <c>5</c>
+                  <c>IND</c>
+                  <c>2.11</c>
+                  <c>2.11</c>
+                  <c>2.5</c>
+                  <c>5.14</c>
+                  <c>MMM_WA_IND_MFG_Planned Absenteeism</c>
+                  <c>May-21</c>
+                  <c>MMM_WA_IND_MFG_UnPlanned Absenteeism</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="232">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="545" width="1009" height="218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Quality</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="228">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="LocationId" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="MonthNum" />
+                <Field name="MonYear" />
+                <Field name="X-Axis" />
+                <Field name="Copq%" />
+                <Field name="Title_COPQ" />
+                <Field name="COPQ Goal" />
+                <Field name="FileName" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jan</c>
+                  <c>1</c>
+                  <c>Jun2021</c>
+                  <c>Jan-21</c>
+                  <c>1.71515465679428</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Feb</c>
+                  <c>2</c>
+                  <c>Jun2021</c>
+                  <c>Feb-21</c>
+                  <c>1.56166763568369</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Mar</c>
+                  <c>3</c>
+                  <c>Jun2021</c>
+                  <c>Mar-21</c>
+                  <c>1.42188267273953</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Apr</c>
+                  <c>4</c>
+                  <c>Jun2021</c>
+                  <c>Apr-21</c>
+                  <c>1.20476719437486</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>May</c>
+                  <c>5</c>
+                  <c>Jun2021</c>
+                  <c>May-21</c>
+                  <c>2.96046780796572</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jun</c>
+                  <c>6</c>
+                  <c>Jun2021</c>
+                  <c>Jun-21</c>
+                  <c>0.637214747739314</c>
+                  <c>MMM_WA_IND_MFG_COPQ</c>
+                  <c>2</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="190">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="596" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>COPQ (%)</name>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Copq%</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <name>COPQ % Target</name>
+                  <mode>lines</mode>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>COPQ Goal</ysrc>
+                  <line>
+                    <width>2</width>
+                    <color>rgb(200, 150, 0)</color>
+                  </line>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Akron_OH_IND_MFG_COPQ</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Mon-Year</text>
+                    </title>
+                    <type>category</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                  </xaxis>
+                  <yaxis>
+                    <range>-0.42561111111111111</range>
+                    <range>2.066611111111111</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>COPQ (%)</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_COPQ</ColumnsToBatchBy>
+                  <TemplateString>@[Title_COPQ](Title_COPQ)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="179">
+          <GuiSettings>
+            <Position x="380" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Copq%","COPQ Goal"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="199" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Round([Copq%], 0.001)" field="Copq%" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Copq% = Round([Copq%], 0.001)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="980" y="608" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_1428260dd05040f7aada7f559c95cb91_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="884" y="607" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_COPQ" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_COPQ" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_COPQ" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_COPQ" selected="False" rename="Right_Title_COPQ" input="Right_" />
+                    <SelectField field="Right_Map" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="716" y="680" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Title_COPQ" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="620" y="680" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_COPQ" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="716" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Title_LTIR-TRIR" selected="False" rename="Title" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="284" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="LocationId" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="MonthNum" selected="True" />
+                <SelectField field="MonYear" selected="False" />
+                <SelectField field="X-Axis" selected="True" />
+                <SelectField field="Copq%" selected="True" />
+                <SelectField field="Title_COPQ" selected="True" />
+                <SelectField field="COPQ Goal" selected="True" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="476" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Year" order="Ascending" />
+                <Field field="MonthNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Year - Ascending
+MonthNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="213">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="137" width="1010" height="388" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Safety</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="501" y="190" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="FileName" order="Ascending" />
+                <Field field="Year" order="Ascending" />
+                <Field field="MonthNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>FileName - Ascending
+Year - Ascending
+MonthNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="657" y="189" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>lines+markers</mode>
+                  <name>TRIR</name>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>TRIR (R12)</ysrc>
+                  <orientation>v</orientation>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(255, 202, 105)</color>
+                  </marker>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <fill>tozeroy</fill>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>bar</type>
+                  <name>LTIR</name>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>LTIR (R12)</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                  <traceIndex>0</traceIndex>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <mode>lines+markers</mode>
+                  <fill>tozeroy</fill>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <name>TRIR Goal</name>
+                  <mode>lines</mode>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>TRIR_Goal</ysrc>
+                  <line>
+                    <width>2</width>
+                    <color>rgb(255, 202, 105)</color>
+                  </line>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <name>LTIR Goal</name>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>LTIR_Goal</ysrc>
+                  <line>
+                    <width>2</width>
+                    <color>rgb(200, 150, 0)</color>
+                  </line>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                  <traceIndex>2</traceIndex>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Akron_OH_IND_MFG_R12_LTIR &amp; TRIR</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>15</size>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>11.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Month-Year</text>
+                    </title>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                    <type>category</type>
+                    <showline>true</showline>
+                    <tickmode>auto</tickmode>
+                    <tick0>0</tick0>
+                    <dtick>0</dtick>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>5.7052631578947368</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>TRIR (R12) / LTIR (R12)</text>
+                    </title>
+                    <type>linear</type>
+                    <showline>true</showline>
+                  </yaxis>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_LTIR-TRIR</ColumnsToBatchBy>
+                  <TemplateString>@[Title_LTIR-TRIR](Title_LTIR-TRIR)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="307" y="189" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="RecordID" selected="True" />
+                <SelectField field="Site Code" selected="True" />
+                <SelectField field="LocationId" selected="True" />
+                <SelectField field="BusinessUnit" selected="True" />
+                <SelectField field="Region" selected="True" />
+                <SelectField field="Sector" selected="True" />
+                <SelectField field="FacilityAddress" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Country" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="HFMId" selected="True" />
+                <SelectField field="Service" selected="True" />
+                <SelectField field="SubBusiness" selected="True" />
+                <SelectField field="IndustryDesc" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="MonthNum" selected="True" />
+                <SelectField field="ManualHeadCount" selected="True" />
+                <SelectField field="ManualMonthlyHours" selected="True" />
+                <SelectField field="TotalRecordable" selected="True" />
+                <SelectField field="LostTime" selected="True" />
+                <SelectField field="R12 Total Recordables" selected="True" />
+                <SelectField field="R12 MonthlyManualHours" selected="True" />
+                <SelectField field="R12 Lost-Time" selected="True" />
+                <SelectField field="TRIR" selected="True" />
+                <SelectField field="TRIR (R12)" selected="True" />
+                <SelectField field="TRIR_Goal" selected="True" />
+                <SelectField field="LTIR" selected="True" />
+                <SelectField field="LTIR (R12)" selected="True" />
+                <SelectField field="LTIR_Goal" selected="True" />
+                <SelectField field="R12OrderID" selected="False" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="X-Axis" selected="True" />
+                <SelectField field="EHS Roadmap" selected="True" />
+                <SelectField field="EHS Roadmap_Goal" selected="True" />
+                <SelectField field="Energy Intensity %" selected="False" />
+                <SelectField field="Baseline Energy" selected="False" />
+                <SelectField field="R12 Energy" selected="False" />
+                <SelectField field="Carbon Emissions %" selected="False" />
+                <SelectField field="Title_LTIR-TRIR" selected="True" />
+                <SelectField field="Title_EHS Roadmap" selected="True" />
+                <SelectField field="NearMiss" selected="False" />
+                <SelectField field="FirstAid" selected="False" />
+                <SelectField field="LightDuty" selected="False" />
+                <SelectField field="LostWorkDays" selected="False" />
+                <SelectField field="LightDutyDays" selected="False" />
+                <SelectField field="SeriousIncidents" selected="False" />
+                <SelectField field="VehicleIncidentsTotal" selected="False" />
+                <SelectField field="VehicleIncidentsFault" selected="False" />
+                <SelectField field="Waste_Goal" selected="False" />
+                <SelectField field="Energy_Goal" selected="False" />
+                <SelectField field="Water_Goal" selected="False" />
+                <SelectField field="Recordables_Goal" selected="False" />
+                <SelectField field="LostTime_Goal" selected="False" />
+                <SelectField field="HRRate_Goal" selected="False" />
+                <SelectField field="Facility" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="212" y="189" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[FileName]+&quot;_R12_LTIR &amp; TRIR&quot;" field="Title_LTIR-TRIR" size="1073741823" type="V_WString" />
+                <FormulaField expression="Left([Month], 3)+'-'+Right(ToString([Year]), 2)" field="X-Axis" size="1073741823" type="V_WString" />
+                <FormulaField expression="[FileName]+&quot;_EHS Roadmap&quot;" field="Title_EHS Roadmap" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Title_LTIR-TRIR = [FileName]+"_R12_LTIR &amp; TRIR"
+X-Axis = Left([Month], 3)+'-'+Ri...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="669" y="358" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>EHS Roadmap</name>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>EHS Roadmap</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>EHS Roadmap_Goal</ysrc>
+                  <line>
+                    <width>2</width>
+                    <color>rgb(200, 150, 0)</color>
+                  </line>
+                  <name>EHS Roadmap Goal</name>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>Delhi_IA_IND_MFG_EHS Roadmap</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>11.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Month-Year</text>
+                    </title>
+                    <type>category</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                    <showline>true</showline>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>0.22105263157894736</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>EHS Roadmap</text>
+                    </title>
+                    <type>linear</type>
+                    <showline>true</showline>
+                  </yaxis>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_EHS Roadmap</ColumnsToBatchBy>
+                  <TemplateString>@[Title_EHS Roadmap](Title_EHS Roadmap)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="753" y="358" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="741" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="681" y="442" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_EHS Roadmap" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="777" y="442" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FileName" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="885" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_EHS Roadmap" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_EHS Roadmap" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_EHS Roadmap" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_EHS Roadmap" selected="False" rename="Right_Title_EHS Roadmap" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="657" y="274" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_LTIR-TRIR" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="753" y="274" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FileName" />
+                <Field field="Title_LTIR-TRIR" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="885" y="202" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_LTIR-TRIR" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_LTIR-TRIR" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_LTIR-TRIR" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_LTIR-TRIR" selected="False" rename="Right_Title_LTIR-TRIR" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="981" y="201" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_176b58f6455444578322621f4e9e43a9_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="981" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_f4d3b6ca1d3c484ba630e16ac4fad2a8_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="178">
+          <GuiSettings>
+            <Position x="405" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"ManualHeadCount","ManualMonthlyHours","TotalRecordable","LostTime","R12 Total Recordables","R12 MonthlyManualHours","R12 Lost-Time","TRIR","TRIR (R12)","TRIR_Goal","LTIR","LTIR (R12)","LTIR_Goal","EHS Roadmap","EHS Roadmap_Goal"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="227">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="80" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="LocationId" />
+                <Field name="BusinessUnit" />
+                <Field name="Region" />
+                <Field name="FacilityAddress" />
+                <Field name="City" />
+                <Field name="State" />
+                <Field name="Country" />
+                <Field name="Zip" />
+                <Field name="Service" />
+                <Field name="SubBusiness" />
+                <Field name="IndustryDesc" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="MonthNum" />
+                <Field name="ManualHeadCount" />
+                <Field name="ManualMonthlyHours" />
+                <Field name="TotalRecordable" />
+                <Field name="LostTime" />
+                <Field name="TRIR_Goal" />
+                <Field name="LTIR_Goal" />
+                <Field name="FileName" />
+                <Field name="TRIR" />
+                <Field name="TRIR (R12)" />
+                <Field name="LTIR" />
+                <Field name="LTIR (R12)" />
+                <Field name="NearMiss" />
+                <Field name="FirstAid" />
+                <Field name="LightDuty" />
+                <Field name="LostWorkDays" />
+                <Field name="LightDutyDays" />
+                <Field name="SeriousIncidents" />
+                <Field name="VehicleIncidentsTotal" />
+                <Field name="VehicleIncidentsFault" />
+                <Field name="Waste_Goal" />
+                <Field name="Energy_Goal" />
+                <Field name="Water_Goal" />
+                <Field name="Recordables_Goal" />
+                <Field name="LostTime_Goal" />
+                <Field name="EHS Roadmap" />
+                <Field name="EHS Roadmap_Goal" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>April</c>
+                  <c>4</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>7.68</c>
+                  <c>3.84</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.67</c>
+                  <c>0.75</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>February</c>
+                  <c>2</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>0.00</c>
+                  <c>2.33</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.7</c>
+                  <c>0.75</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>January</c>
+                  <c>1</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>0.00</c>
+                  <c>2.31</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.7</c>
+                  <c>0.75</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>June</c>
+                  <c>6</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>0.00</c>
+                  <c>3.84</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.67</c>
+                  <c>0.75</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>March</c>
+                  <c>3</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>9.17</c>
+                  <c>3.11</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.67</c>
+                  <c>0.75</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>YYY</c>
+                  <c>NA</c>
+                  <c>ABC Road</c>
+                  <c>MMM</c>
+                  <c>WA</c>
+                  <c>United States</c>
+                  <c>123456</c>
+                  <c>Specialty</c>
+                  <c>INFRA</c>
+                  <c>Large and small hydraulic tools</c>
+                  <c>2021</c>
+                  <c>May</c>
+                  <c>5</c>
+                  <c>120</c>
+                  <c>25000</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1.59</c>
+                  <c>0</c>
+                  <c>MMM_WA_IND_MFG</c>
+                  <c>0.00</c>
+                  <c>3.81</c>
+                  <c>0.00</c>
+                  <c>0.00</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0.67</c>
+                  <c>0.75</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="214">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="1231" width="1010" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Cost</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="524" y="1280" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Year" order="Ascending" />
+                <Field field="MonthNum" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Year - Ascending
+MonthNum - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="344" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;MMM_WA_IND_MFG_Inv Turns&quot;" field="Title_Inv" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Title_Inv = "MMM_WA_IND_MFG_Inv Turns"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="151" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="154">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="752" y="1280" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="155">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="668" y="1376" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="MonYear" selected="True" />
+                <SelectField field="Title_Inv" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="156">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="764" y="1376" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Title_Inv" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="157">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="884" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Title_Inv" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Title_Inv" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Title_Inv" selected="True" rename="Title" input="Left_" />
+                    <SelectField field="Right_Title_Inv" selected="False" rename="Right_Title_Inv" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="158">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="980" y="1291" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_04ab9ccb7ce64770b4c8fbdad092123d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="159">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="668" y="1280" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>Inventory Turns ($)</name>
+                  <orientation>v</orientation>
+                  <xsrc>X-Axis</xsrc>
+                  <ysrc>Inventory $</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(200, 150, 0)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <name>Inventory Turns</name>
+                  <xsrc>X-Axis</xsrc>
+                  <mode>lines</mode>
+                  <ysrc>Inventory Turns</ysrc>
+                  <yaxis>y2</yaxis>
+                  <line>
+                    <width>2</width>
+                  </line>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>MMM_WA_IND_MFG_Inv Turns</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>X-Axis</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>147.36842105263159</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Inventory $</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                  <yaxis2>
+                    <type>linear</type>
+                    <side>right</side>
+                    <showgrid>false</showgrid>
+                    <overlaying>y</overlaying>
+                    <range>1.2092047127455239</range>
+                    <range>1.9213763842076461</range>
+                    <autorange>true</autorange>
+                  </yaxis2>
+                </Layout>
+                <Batch>
+                  <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Title_Inv</ColumnsToBatchBy>
+                  <TemplateString>@[Title_Inv](Title_Inv)</TemplateString>
+                </Batch>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="181">
+          <GuiSettings>
+            <Position x="247" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"RecordID","LocationId","HFMID","Year","Month","Freq","Month/Quarter","Entity","Description","BU","4Wall_%Liquidations","4Wall_%Liquidations_Goal","4Wall_%Liquidations_PY","E&amp;O_%Inv","E&amp;O_%Inv _Goal","E&amp;O_%Inv_PY","4WallOCOSExWar","4WallOCOSExWar_Goal","4WallOCOSExWar_PY","CapEx","CapEx_Goal","CapEx_PY","Inventory Turns","COT","Inventory $","Division","SBU","Site Code","Region","Country","City","State","FileName","MonthNum","R12OrderID","Mon-Yr","MonYear","Title_InvTurns","X-Axis"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="230">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="LocationId" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="MonthNum" />
+                <Field name="X-Axis" />
+                <Field name="Month/Quarter" />
+                <Field name="Inventory Turns" />
+                <Field name="Inventory $" />
+                <Field name="FileName" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jan</c>
+                  <c>1</c>
+                  <c>Jan-21</c>
+                  <c>Jan</c>
+                  <c>1.63157763270002</c>
+                  <c>100</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Feb</c>
+                  <c>2</c>
+                  <c>Feb-21</c>
+                  <c>Feb</c>
+                  <c>1.67727823713319</c>
+                  <c>120</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Mar</c>
+                  <c>3</c>
+                  <c>Mar-21</c>
+                  <c>Mar</c>
+                  <c>1.88576780063454</c>
+                  <c>120</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Apr</c>
+                  <c>4</c>
+                  <c>Apr-21</c>
+                  <c>Apr</c>
+                  <c>1.61974936968277</c>
+                  <c>130</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>May</c>
+                  <c>5</c>
+                  <c>May-21</c>
+                  <c>May</c>
+                  <c>1.43087249656689</c>
+                  <c>140</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+                <r>
+                  <c>XXX</c>
+                  <c>2021</c>
+                  <c>Jun</c>
+                  <c>6</c>
+                  <c>Jun-21</c>
+                  <c>Jun</c>
+                  <c>1.24481329631863</c>
+                  <c>123</c>
+                  <c>MMM_WA_IND_MFG</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="239">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="440" y="1292" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Year</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-06-18 17:52:17</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2021</Operand>
+                  <StartDate>2021-06-18 17:52:17</StartDate>
+                  <EndDate>2021-06-18 17:52:17</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Year] = 2021</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="142">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1135" y="150" width="505" height="301" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output to PDF or Any Visualization</Caption>
+          <Style TextColor="#314c4a" FillColor="#d7ffd7" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="70">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="1556" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType />
+              <OutputFile>Test.pdf</OutputFile>
+              <BatchMode value="True" />
+              <GroupField>FileName</GroupField>
+              <FilenameModifier>ReplacePath</FilenameModifier>
+              <DataField>Layout</DataField>
+              <Separator>Breaking</Separator>
+              <EmbedDependencies value="False" />
+              <ShowHeader value="False" />
+              <ShowFooter value="False" />
+              <PortraitMode value="False" />
+              <PaperType Width="595" Height="841" Left="36" Right="36" Top="36" Bottom="36" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>3</PNGResolution>
+              <PNGLargerAction>squeeze</PNGLargerAction>
+              <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1460" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;MMM_WA_IND_MFG_KPIs_PlantBoard_HackX_Aug2021.pdf&quot;" field="FileName" size="4000" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[FileName = "MMM_WA_IND_MFG_KPIs_PlantBoard_HackX_Aug2021.pdf"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1268" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerGroup</GroupingMode>
+              <GroupingFields orderChanged="False">
+                <Field name="FileName" />
+              </GroupingFields>
+              <Orientation>V</Orientation>
+              <Separator>Breaking</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Chart" selected="True" Width="" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Section Breaks
+Each Group Of Records</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1556" y="332" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_6a5d7ed5a9a4478fa2e7bbc90b26f33b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="235">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1364" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FileName" selected="True" type="V_WString" size="4000" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1160" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>Safety - LTIR TRIR</Connection>
+                <Connection>Safety - EHS Roadmap</Connection>
+                <Connection>Quality - COPQ</Connection>
+                <Connection>People - Absenteeism</Connection>
+                <Connection>People - Attrition (Turnover)</Connection>
+                <Connection>Cost - Inventory Turns</Connection>
+                <Connection>Operations - Employee Ideas Implementation</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="237">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1328" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9908_fa56fa8eddcd40a7a2a438158d7cdbd6_\Engine_19548_a1b6c2e5245e4a33ad2886e3af1245ca_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="238">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="1160" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="False" />
+              <JoinFields>
+                <JoinInfo connection="#1">
+                  <Field field="LocationId" />
+                  <Field field="Year" />
+                  <Field field="MonthNum" />
+                </JoinInfo>
+                <JoinInfo connection="#2">
+                  <Field field="LocationId" />
+                  <Field field="Year" />
+                  <Field field="MonthNum" />
+                </JoinInfo>
+                <JoinInfo connection="#3">
+                  <Field field="LocationId" />
+                  <Field field="Year" />
+                  <Field field="MonthNum" />
+                </JoinInfo>
+                <JoinInfo connection="#4">
+                  <Field field="LocationId" />
+                  <Field field="Year" />
+                  <Field field="MonthNum" />
+                </JoinInfo>
+                <JoinInfo connection="#5">
+                  <Field field="Location Id" />
+                  <Field field="Year" />
+                  <Field field="MonthNum" />
+                </JoinInfo>
+              </JoinFields>
+              <CartesianMode>Allow</CartesianMode>
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#1_RecordID" selected="True" />
+                    <SelectField field="Input_#1_Site Code" selected="True" />
+                    <SelectField field="Input_#1_LocationId" selected="True" />
+                    <SelectField field="Input_#1_BusinessUnit" selected="True" />
+                    <SelectField field="Input_#1_Region" selected="True" />
+                    <SelectField field="Input_#1_Sector" selected="True" />
+                    <SelectField field="Input_#1_FacilityAddress" selected="True" />
+                    <SelectField field="Input_#1_City" selected="True" />
+                    <SelectField field="Input_#1_State" selected="True" />
+                    <SelectField field="Input_#1_Country" selected="True" />
+                    <SelectField field="Input_#1_Zip" selected="True" />
+                    <SelectField field="Input_#1_HFMId" selected="True" />
+                    <SelectField field="Input_#1_Service" selected="True" />
+                    <SelectField field="Input_#1_SubBusiness" selected="True" />
+                    <SelectField field="Input_#1_IndustryDesc" selected="True" />
+                    <SelectField field="Input_#1_Year" selected="True" />
+                    <SelectField field="Input_#1_Month" selected="True" />
+                    <SelectField field="Input_#1_MonthNum" selected="True" />
+                    <SelectField field="Input_#1_ManualHeadCount" selected="True" />
+                    <SelectField field="Input_#1_ManualMonthlyHours" selected="True" />
+                    <SelectField field="Input_#1_TotalRecordable" selected="True" />
+                    <SelectField field="Input_#1_LostTime" selected="True" />
+                    <SelectField field="Input_#1_R12 Total Recordables" selected="True" />
+                    <SelectField field="Input_#1_R12 MonthlyManualHours" selected="True" />
+                    <SelectField field="Input_#1_R12 Lost-Time" selected="True" />
+                    <SelectField field="Input_#1_TRIR" selected="True" />
+                    <SelectField field="Input_#1_TRIR (R12)" selected="True" />
+                    <SelectField field="Input_#1_TRIR_Goal" selected="True" />
+                    <SelectField field="Input_#1_LTIR" selected="True" />
+                    <SelectField field="Input_#1_LTIR (R12)" selected="True" />
+                    <SelectField field="Input_#1_LTIR_Goal" selected="True" />
+                    <SelectField field="Input_#1_FileName" selected="True" />
+                    <SelectField field="Input_#1_MonYear" selected="True" />
+                    <SelectField field="Input_#1_EHS Roadmap" selected="True" />
+                    <SelectField field="Input_#1_EHS Roadmap_Goal" selected="True" />
+                    <SelectField field="Input_#2_Site Code" selected="False" rename="Input_#2_Site Code" />
+                    <SelectField field="Input_#2_LocationId" selected="False" rename="Input_#2_LocationId" />
+                    <SelectField field="Input_#2_BusinessUnit" selected="False" rename="Input_#2_BusinessUnit" />
+                    <SelectField field="Input_#2_Region" selected="False" rename="Input_#2_Region" />
+                    <SelectField field="Input_#2_Sector" selected="False" rename="Input_#2_Sector" />
+                    <SelectField field="Input_#2_FacilityAddress" selected="False" rename="Input_#2_FacilityAddress" />
+                    <SelectField field="Input_#2_City" selected="False" rename="Input_#2_City" />
+                    <SelectField field="Input_#2_State" selected="False" rename="Input_#2_State" />
+                    <SelectField field="Input_#2_Country" selected="False" rename="Input_#2_Country" />
+                    <SelectField field="Input_#2_Zip" selected="False" rename="Input_#2_Zip" />
+                    <SelectField field="Input_#2_HFMID" selected="True" rename="Input_#2_HFMID" />
+                    <SelectField field="Input_#2_Service" selected="False" rename="Input_#2_Service" />
+                    <SelectField field="Input_#2_SubBusiness" selected="False" rename="Input_#2_SubBusiness" />
+                    <SelectField field="Input_#2_IndustryDesc" selected="False" rename="Input_#2_IndustryDesc" />
+                    <SelectField field="Input_#2_Year" selected="False" rename="Input_#2_Year" />
+                    <SelectField field="Input_#2_Month" selected="False" rename="Input_#2_Month" />
+                    <SelectField field="Input_#2_MonthNum" selected="False" rename="Input_#2_MonthNum" />
+                    <SelectField field="Input_#2_FileName" selected="False" rename="Input_#2_FileName" />
+                    <SelectField field="Input_#2_MonYear" selected="False" rename="Input_#2_MonYear" />
+                    <SelectField field="Input_#2_X-Axis" selected="False" rename="Input_#2_X-Axis" />
+                    <SelectField field="Input_#2_Copq%" selected="True" />
+                    <SelectField field="Input_#2_COPQ Goal" selected="True" />
+                    <SelectField field="Input_#3_Site Code" selected="False" rename="Input_#3_Site Code" />
+                    <SelectField field="Input_#3_LocationId" selected="False" rename="Input_#3_LocationId" />
+                    <SelectField field="Input_#3_BusinessUnit" selected="False" rename="Input_#3_BusinessUnit" />
+                    <SelectField field="Input_#3_Region" selected="False" rename="Input_#3_Region" />
+                    <SelectField field="Input_#3_Sector" selected="False" rename="Input_#3_Sector" />
+                    <SelectField field="Input_#3_FacilityAddress" selected="False" rename="Input_#3_FacilityAddress" />
+                    <SelectField field="Input_#3_City" selected="False" rename="Input_#3_City" />
+                    <SelectField field="Input_#3_State" selected="False" rename="Input_#3_State" />
+                    <SelectField field="Input_#3_Country" selected="False" rename="Input_#3_Country" />
+                    <SelectField field="Input_#3_Zip" selected="False" rename="Input_#3_Zip" />
+                    <SelectField field="Input_#3_HFMID" selected="False" rename="Input_#3_HFMID" />
+                    <SelectField field="Input_#3_Service" selected="False" rename="Input_#3_Service" />
+                    <SelectField field="Input_#3_SubBusiness" selected="False" rename="Input_#3_SubBusiness" />
+                    <SelectField field="Input_#3_IndustryDesc" selected="False" rename="Input_#3_IndustryDesc" />
+                    <SelectField field="Input_#3_Year" selected="False" rename="Input_#3_Year" />
+                    <SelectField field="Input_#3_Month" selected="False" rename="Input_#3_Month" />
+                    <SelectField field="Input_#3_MonthNum" selected="False" rename="Input_#3_MonthNum" />
+                    <SelectField field="Input_#3_FileName" selected="False" rename="Input_#3_FileName" />
+                    <SelectField field="Input_#3_MonYear" selected="False" rename="Input_#3_MonYear" />
+                    <SelectField field="Input_#3_X-Axis" selected="False" rename="Input_#3_X-Axis" />
+                    <SelectField field="Input_#3_Attrition Rate (%)" selected="True" />
+                    <SelectField field="Input_#3_Voluntary Attrition Rate (%)" selected="True" />
+                    <SelectField field="Input_#3_Planned_Absenteeism (%)" selected="True" />
+                    <SelectField field="Input_#3_Unplanned_Absenteeism (%)" selected="True" />
+                    <SelectField field="Input_#4_LocationId" selected="False" rename="Input_#4_LocationId" />
+                    <SelectField field="Input_#4_Site Code" selected="False" rename="Input_#4_Site Code" />
+                    <SelectField field="Input_#4_Region" selected="False" rename="Input_#4_Region" />
+                    <SelectField field="Input_#4_City" selected="False" rename="Input_#4_City" />
+                    <SelectField field="Input_#4_State" selected="False" rename="Input_#4_State" />
+                    <SelectField field="Input_#4_Country" selected="False" rename="Input_#4_Country" />
+                    <SelectField field="Input_#4_HFMID" selected="False" rename="Input_#4_HFMID" />
+                    <SelectField field="Input_#4_Year" selected="False" rename="Input_#4_Year" />
+                    <SelectField field="Input_#4_Month" selected="False" rename="Input_#4_Month" />
+                    <SelectField field="Input_#4_MonthNum" selected="False" rename="Input_#4_MonthNum" />
+                    <SelectField field="Input_#4_FileName" selected="False" rename="Input_#4_FileName" />
+                    <SelectField field="Input_#4_MonYear" selected="False" rename="Input_#4_MonYear" />
+                    <SelectField field="Input_#4_X-Axis" selected="False" rename="Input_#4_X-Axis" />
+                    <SelectField field="Input_#4_COT" selected="True" />
+                    <SelectField field="Input_#4_RecordID" selected="False" rename="Input_#4_RecordID" />
+                    <SelectField field="Input_#4_4Wall_%Liquidations" selected="True" />
+                    <SelectField field="Input_#4_4Wall_%Liquidations_Goal" selected="True" />
+                    <SelectField field="Input_#4_4Wall_%Liquidations_PY" selected="True" />
+                    <SelectField field="Input_#4_E&amp;O_%Inv" selected="True" />
+                    <SelectField field="Input_#4_E&amp;O_%Inv _Goal" selected="True" />
+                    <SelectField field="Input_#4_E&amp;O_%Inv_PY" selected="True" />
+                    <SelectField field="Input_#4_4WallOCOSExWar" selected="True" />
+                    <SelectField field="Input_#4_4WallOCOSExWar_Goal" selected="True" />
+                    <SelectField field="Input_#4_4WallOCOSExWar_PY" selected="True" />
+                    <SelectField field="Input_#4_CapEx" selected="True" />
+                    <SelectField field="Input_#4_CapEx_Goal" selected="True" />
+                    <SelectField field="Input_#4_CapEx_PY" selected="True" />
+                    <SelectField field="Input_#4_Inventory Turns" selected="True" />
+                    <SelectField field="Input_#4_Division" selected="True" />
+                    <SelectField field="Input_#4_Inventory $" selected="True" />
+                    <SelectField field="Input_#4_R12EndingMonth" selected="True" />
+                    <SelectField field="Input_#4_R12EndingYear" selected="True" />
+                    <SelectField field="Input_#5_Site Code" selected="False" rename="Input_#5_Site Code" />
+                    <SelectField field="Input_#5_BusinessUnit" selected="False" rename="Input_#5_BusinessUnit" />
+                    <SelectField field="Input_#5_SubBusiness" selected="False" rename="Input_#5_SubBusiness" />
+                    <SelectField field="Input_#5_Sector" selected="False" rename="Input_#5_Sector" />
+                    <SelectField field="Input_#5_Region" selected="False" rename="Input_#5_Region" />
+                    <SelectField field="Input_#5_Country" selected="False" rename="Input_#5_Country" />
+                    <SelectField field="Input_#5_State" selected="False" rename="Input_#5_State" />
+                    <SelectField field="Input_#5_City" selected="False" rename="Input_#5_City" />
+                    <SelectField field="Input_#5_HFMID" selected="False" rename="Input_#5_HFMID" />
+                    <SelectField field="Input_#5_Year" selected="False" rename="Input_#5_Year" />
+                    <SelectField field="Input_#5_Month" selected="False" rename="Input_#5_Month" />
+                    <SelectField field="Input_#5_#_Total_Employee_Ideas_submitted" selected="True" />
+                    <SelectField field="Input_#5_#_Total_Employee_Ideas_implemented" selected="True" />
+                    <SelectField field="Input_#5_Total_#_Value streams" selected="True" />
+                    <SelectField field="Input_#5_Number_VS_Cpt_12steps" selected="True" />
+                    <SelectField field="Input_#5_MonYear" selected="False" rename="Input_#5_MonYear" />
+                    <SelectField field="Input_#5_X-Axis" selected="False" rename="Input_#5_X-Axis" />
+                    <SelectField field="Input_#5_FileName" selected="False" rename="Input_#5_FileName" />
+                    <SelectField field="Input_#5_R12OrderID" selected="False" rename="Input_#5_R12OrderID" />
+                    <SelectField field="Input_#5_Employee Idea Implementation Rate (%)" selected="True" />
+                    <SelectField field="Input_#5_Value Streams Mapped (%)" selected="True" />
+                    <SelectField field="Input_#5_MonthNum" selected="False" rename="Input_#5_MonthNum" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="242" Connection="Model" />
+      <Destination ToolID="240" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="168" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="220" Connection="Input" />
+    </Connection>
+    <Connection name="#5" Wireless="True">
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="238" Connection="Input" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="238" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="238" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="238" Connection="Input" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="238" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="166" Connection="Output" />
+      <Destination ToolID="183" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="167" Connection="Output" />
+      <Destination ToolID="170" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="169" Connection="Unique" />
+      <Destination ToolID="170" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="168" Connection="Output" />
+      <Destination ToolID="169" Connection="Input" />
+    </Connection>
+    <Connection name="Operations - Employee Ideas Implementation" Wireless="True">
+      <Origin ToolID="170" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="People - Absenteeism" Wireless="True">
+      <Origin ToolID="105" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="People - Attrition (Turnover)" Wireless="True">
+      <Origin ToolID="147" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="Quality - COPQ" Wireless="True">
+      <Origin ToolID="76" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="Safety - EHS Roadmap" Wireless="True">
+      <Origin ToolID="83" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="Safety - LTIR TRIR" Wireless="True">
+      <Origin ToolID="87" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="Cost - Inventory Turns" Wireless="True">
+      <Origin ToolID="157" Connection="Join" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="170" Connection="Join" />
+      <Destination ToolID="171" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="182" Connection="Output26" />
+      <Destination ToolID="164" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="183" Connection="Output" />
+      <Destination ToolID="182" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="191" Connection="True" />
+      <Destination ToolID="166" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="220" Connection="Output" />
+      <Destination ToolID="167" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="231" Connection="Output" />
+      <Destination ToolID="191" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="218" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="219" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="105" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Unique" />
+      <Destination ToolID="105" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Join" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="147" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Unique" />
+      <Destination ToolID="147" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Join" />
+      <Destination ToolID="148" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="180" Connection="Output26" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="218" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="219" Connection="Output" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="229" Connection="Output" />
+      <Destination ToolID="180" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="228" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="190" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="179" Connection="Output26" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Join" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Unique" />
+      <Destination ToolID="76" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="76" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="179" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="190" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="178" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="83" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Unique" />
+      <Destination ToolID="83" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="87" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Unique" />
+      <Destination ToolID="87" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Join" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Join" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="178" Connection="Output26" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="227" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="159" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="155" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="239" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="181" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="157" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="156" Connection="Unique" />
+      <Destination ToolID="157" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="155" Connection="Output" />
+      <Destination ToolID="156" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="157" Connection="Join" />
+      <Destination ToolID="158" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="159" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="181" Connection="Output26" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="230" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="239" Connection="True" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="235" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="235" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="238" Connection="Output" />
+      <Destination ToolID="237" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="238" Connection="Output" />
+      <Destination ToolID="242" Connection="Data" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Hack-X by Game Changers KPI workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="76171cc6-dc50-433b-bba2-4159396d0d8a" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="76171cc6-dc50-433b-bba2-4159396d0d8a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

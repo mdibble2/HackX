@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="397" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Forecasting Models</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\mgd1202\Stanley Black &amp; Decker\Garage Analytica - GLOBAL OPERATIONS KPIs\Alteryx - Remote Machine\Outputs\Safety-Charts_Data.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Charts_Data.yxdb</AnnotationText>
+              <DefaultAnnotationText>Safety-Charts_Data.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Site Code" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="LocationId" size="21" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="BusinessUnit" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Region" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sector" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="FacilityAddress" size="16777216" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Country" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip" size="20" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="HFMId" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="Service" size="500" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="SubBusiness" size="500" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="IndustryDesc" size="16777216" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Year" source="(Multiple Sources)" type="Double" />
+                <Field name="Month" size="50" source="(Multiple Sources)" type="V_WString" />
+                <Field name="MonthNum" source="TextInput: (Multiple Sources)" type="Int64" />
+                <Field name="ManualHeadCount" source="(Multiple Sources)" type="Double" />
+                <Field name="ManualMonthlyHours" source="(Multiple Sources)" type="Double" />
+                <Field name="TotalRecordable" source="File: (Multiple Sources)" type="Double" />
+                <Field name="LostTime" source="File: (Multiple Sources)" type="Double" />
+                <Field name="TRIR_Goal" source="(Multiple Sources)" type="Double" />
+                <Field name="LTIR_Goal" source="(Multiple Sources)" type="Double" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+                <Field description="Formula: [TotalRecordable]+[Row-1:TotalRecordable]+[Row-2:TotalRecordable]+[Row-3:TotalRecordable]+[Row-4:TotalRecordable]+[Row-5:TotalRecordable]+[Row-6:TotalRecordable]+[Row-7:TotalRecordable]+[Row-8:TotalRecordable]+[Row-9:TotalRecordable]+[Row-10:TotalRecordable]+[Row-11:TotalRecordable]" name="R12 Total Recordables" source="Formula: [TotalRecordable]+[Row-1:TotalRecordable]+[Row-2:TotalRecordable]+[Row-3:TotalRecordable]+[Row-4:TotalRecordable]+[Row-5:TotalRecordable]+[Row-6:TotalRecordable]+[Row-7:TotalRecordable]+[Row-8:TotalRecordable]+[Row-9:TotalRecordable]+[Row-10:TotalRecordable]+[Row-11:TotalRecordable]" type="Double" />
+                <Field description="Formula: [ManualMonthlyHours]+[Row-1:ManualMonthlyHours]+[Row-2:ManualMonthlyHours]+[Row-3:ManualMonthlyHours]+[Row-4:ManualMonthlyHours]+[Row-5:ManualMonthlyHours]+[Row-6:ManualMonthlyHours]+[Row-7:ManualMonthlyHours]+[Row-8:ManualMonthlyHours]+[Row-9:ManualMonthlyHours]+[Row-10:ManualMonthlyHours]+[Row-11:ManualMonthlyHours]" name="R12 MonthlyManualHours" source="Formula: [ManualMonthlyHours]+[Row-1:ManualMonthlyHours]+[Row-2:ManualMonthlyHours]+[Row-3:ManualMonthlyHours]+[Row-4:ManualMonthlyHours]+[Row-5:ManualMonthlyHours]+[Row-6:ManualMonthlyHours]+[Row-7:ManualMonthlyHours]+[Row-8:ManualMonthlyHours]+[Row-9:ManualMonthlyHours]+[Row-10:ManualMonthlyHours]+[Row-11:ManualMonthlyHours]" type="Double" />
+                <Field description="Formula: [LostTime]+[Row-1:LostTime]+[Row-2:LostTime]+[Row-3:LostTime]+[Row-4:LostTime]+[Row-5:LostTime]+[Row-6:LostTime]+[Row-7:LostTime]+[Row-8:LostTime]+[Row-9:LostTime]+[Row-10:LostTime]+[Row-11:LostTime]" name="R12 Lost-Time" source="Formula: [LostTime]+[Row-1:LostTime]+[Row-2:LostTime]+[Row-3:LostTime]+[Row-4:LostTime]+[Row-5:LostTime]+[Row-6:LostTime]+[Row-7:LostTime]+[Row-8:LostTime]+[Row-9:LostTime]+[Row-10:LostTime]+[Row-11:LostTime]" type="Double" />
+                <Field name="TRIR" scale="2" size="19" source="Formula: IF [ManualMonthlyHours]!= 0 THEN ([TotalRecordable]*200000)/[ManualMonthlyHours] ELSE&#xA;0 ENDIF" type="FixedDecimal" />
+                <Field name="TRIR (R12)" scale="2" size="19" source="Formula: 200000*([R12 Total Recordables]/[R12 MonthlyManualHours])" type="FixedDecimal" />
+                <Field name="LTIR" scale="2" size="19" source="Formula: IF [ManualMonthlyHours]!= 0 THEN ([LostTime]*200000)/[ManualMonthlyHours] ELSE&#xA;0 ENDIF" type="FixedDecimal" />
+                <Field name="LTIR (R12)" scale="2" size="19" source="Formula: 200000*[R12 Lost-Time]/[R12 MonthlyManualHours]" type="FixedDecimal" />
+                <Field name="NearMiss" source="File: (Multiple Sources)" type="Double" />
+                <Field name="FirstAid" source="File: (Multiple Sources)" type="Double" />
+                <Field name="LightDuty" source="File: (Multiple Sources)" type="Double" />
+                <Field name="LostWorkDays" source="File: aka:EHS_PROD_NOC|||select [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData.* &#xA;from [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="LightDutyDays" source="File: aka:EHS_PROD_NOC|||select [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData.* &#xA;from [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="SeriousIncidents" source="File: aka:EHS_PROD_NOC|||select [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData.* &#xA;from [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="VehicleIncidentsTotal" source="File: aka:EHS_PROD_NOC|||select [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData.* &#xA;from [sql-uat-eus2-ehs-noc].dbo.MonthlySafetyData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="VehicleIncidentsFault" source="File: (Multiple Sources)" type="Double" />
+                <Field name="Waste_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Energy_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Water_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Recordables_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="LostTime_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="HRRate_Goal" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Facility" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="EHS Roadmap" source="File: C:\Users\mgd1202\Stanley Black &amp; Decker\Garage Analytica - GLOBAL OPERATIONS KPIs\Alteryx Workflows\EHS all tiers\Outputs\EHS all plants.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+                <Field description="Formula: IF [EHS Roadmap_Goal]=0 THEN [Row-1:EHS Roadmap_Goal] ELSE [EHS Roadmap_Goal] ENDIF" name="EHS Roadmap_Goal" source="Formula: IF [EHS Roadmap_Goal]=0 THEN [Row-1:EHS Roadmap_Goal] ELSE [EHS Roadmap_Goal] ENDIF" type="Double" />
+                <Field name="Energy Intensity %" source="File: C:\Users\mgd1202\Stanley Black &amp; Decker\Garage Analytica - GLOBAL OPERATIONS KPIs\Alteryx Workflows\EHS all tiers\Outputs\EHS all plants.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+                <Field name="Baseline Energy" source="File: C:\Users\mgd1202\Stanley Black &amp; Decker\Garage Analytica - GLOBAL OPERATIONS KPIs\Alteryx Workflows\EHS all tiers\Outputs\EHS all plants.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+                <Field name="R12 Energy" source="File: C:\Users\mgd1202\Stanley Black &amp; Decker\Garage Analytica - GLOBAL OPERATIONS KPIs\Alteryx Workflows\EHS all tiers\Outputs\EHS all plants.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+                <Field name="Carbon Emissions %" size="255" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="R12OrderID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="MonYear" size="1073741823" source="Formula: Left([Month], 3)+ToString([Year], 0)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings>
+            <Position x="246" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="mod_name" />
+              <Value name="target_field">TRIR (R12)</Value>
+              <Value name="use_covar">False</Value>
+              <Value name="covars">"RecordID", "Site Code", "LocationId", "BusinessUnit", "Region", "Sector", "FacilityAddress", "City", "State", "Country", "Zip", "HFMId", "Service", "SubBusiness", "IndustryDesc", "Year", "Month", "MonthNum", "ManualHeadCount", "ManualMonthlyHours", "TotalRecordable", "LostTime", "TRIR_Goal", "LTIR_Goal", "FileName", "R12 Total Recordables", "R12 MonthlyManualHours", "R12 Lost-Time", "TRIR", "TRIR (R12)", "LTIR", "LTIR (R12)", "NearMiss", "FirstAid", "LightDuty", "LostWorkDays", "LightDutyDays", "SeriousIncidents", "VehicleIncidentsTotal", "VehicleIncidentsFault", "Waste_Goal", "Energy_Goal", "Water_Goal", "Recordables_Goal", "LostTime_Goal", "HRRate_Goal", "Facility", "EHS Roadmap", "EHS Roadmap_Goal", "Energy Intensity %", "Baseline Energy", "R12 Energy", "Carbon Emissions %", "R12OrderID", "MonYear"</Value>
+              <Value name="use_covar_mean">True</Value>
+              <Value name="use_covar_diff">False</Value>
+              <Value name="freq_hourly">False</Value>
+              <Value name="freq_daily">True</Value>
+              <Value name="freq_weekdays">False</Value>
+              <Value name="freq_weekly">False</Value>
+              <Value name="freq_monthly">False</Value>
+              <Value name="freq_quarterly">False</Value>
+              <Value name="freq_annually">False</Value>
+              <Value name="freq_other">False</Value>
+              <Value name="custom_auto">False</Value>
+              <Value name="first_dif">False</Value>
+              <Value name="level_first_dif">0</Value>
+              <Value name="max_p">2</Value>
+              <Value name="max_q">2</Value>
+              <Value name="seas_dif">False</Value>
+              <Value name="level_seas_dif">0</Value>
+              <Value name="s_max_P">1</Value>
+              <Value name="s_max_Q">1</Value>
+              <Value name="ic_aic">False</Value>
+              <Value name="ic_aicc">True</Value>
+              <Value name="ic_bic">False</Value>
+              <Value name="full_enum">False</Value>
+              <Value name="max_order">5</Value>
+              <Value name="m_core">False</Value>
+              <Value name="drift">True</Value>
+              <Value name="box_cox">False</Value>
+              <Value name="lambda">0.00</Value>
+              <Value name="full_custom">False</Value>
+              <Value name="p">0</Value>
+              <Value name="d">0</Value>
+              <Value name="q">0</Value>
+              <Value name="S_P">0</Value>
+              <Value name="S_D">0</Value>
+              <Value name="S_Q">0</Value>
+              <Value name="m_drift">False</Value>
+              <Value name="m_box_cox">False</Value>
+              <Value name="m_lambda">0.00</Value>
+              <Value name="series_start">False</Value>
+              <Value name="start_year">1980</Value>
+              <Value name="start_month_qtr">1</Value>
+              <Value name="forecast_periods">6</Value>
+              <Value name="alteryx.week.US">True</Value>
+              <Value name="alteryx.week.UK">False</Value>
+              <Value name="alteryx.week.ISO8601">False</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.00</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="367" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7120_7cbcd66e723f43079e1692b5db4b5433_\Engine_19548_0fe95c756a334dbbb892b7c64be389e2_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="367" y="223" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7120_7cbcd66e723f43079e1692b5db4b5433_\Engine_19548_44acbc740cb749beaeb8785f7fb95916_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="367" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7120_7cbcd66e723f43079e1692b5db4b5433_\Engine_19548_f79e5d03eba94de6ab54e0ccd3a13a59_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Interactive" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Report" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Hack-X by Game Changers PredictiveModels</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e969a7c1-484f-422b-a1e5-154ff0f12acf" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="e969a7c1-484f-422b-a1e5-154ff0f12acf" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
